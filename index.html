@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Filmes</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/98eb266920.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-2 col-sm-6 col-md-12 col-lg-2 img_area">
+                        <img src="img/Logov3.png" alt="">
+                    </div>
+                    <!--Navegacao/tabs-->
+                    <div class="col-7 col-lg-7" style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb"
+                        id="navegacao">
+                        <div class="nav_bar" style="margin-top: 15px;">
+                            <ul class="nav nav-pills nav-fill breadcrumb">
+                                <li class="nav-item breadcrumb-item">
+                                    <a class="nav-link" href="#"><i class="far fa-star" style="display: none;"></i>
+                                        Lançamentos</a>
+                                </li>
+                                <li class="nav-item breadcrumb-item">
+                                    <a class="nav-link" href="#">Em Destaque</a>
+                                </li>
+                                <li class="nav-item breadcrumb-item">
+                                    <a class="nav-link" href="#">Avaliações</a>
+                                </li>
+                                <li class="nav-item breadcrumb-item">
+                                    <a class="nav-link" href="#">Entrevistas e Making Of</a>
+                                </li>
+                                <li class="nav-item breadcrumb-item">
+                                    <a class="nav-link" href="#">Novidades</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-1 btn_drop">
+                        <!--Dropdowm menu-->
+                        <div class="dropdown">
+                            <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-bars"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark dropdown-menu-sm-start dropdown-menu-md-start"
+                                aria-labelledby="dropdownMenuButton1" style="font-size: large;">
+                                <li><button class="dropdown-item" type="button">Lançamentos</button></li>
+                                <li><button class="dropdown-item" type="button">Em Destaque</button></li>
+                                <li><button class="dropdown-item" type="button">Avaliações</button></li>
+                                <li><button class="dropdown-item" type="button">Entrevistas e Making of</button></li>
+                                <li><button class="dropdown-item" type="button">Novidades</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-3">
+                        <!--Barra Pesquisar-->
+                        <div class="pesquisar" style="margin-top: 10px;">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Pesquisar Filme"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-danger" type="submit">
+                                    <i class="fas fa-search-plus"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="part1" style="margin-bottom: 30px;">
+            <!--Lancamentos-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 Lancamentos">
+                        <h1><strong>Lançamentos</strong></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <!--Carousel-->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"
+                                style="background-color: white;"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2" style="background-color: white;"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3" style="background-color: white;"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4" style="background-color: white;"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!--Filme Carousel-->
+                                <div class="row g-0 position-relative justify-content-center">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-md-0 p-md-4">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DdZPRVpJXB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-4 ps-md-0">
+                                        <h3 class="mt-0"><strong>Mestres do Yin-Yang: O Sonho da Eternidade</strong>
+                                            </h5>
+                                            <p><strong>Sinopse: </strong>Com o despertar de uma serpente demoníaca, os
+                                                mestres do Yin-Yang, vividos por Mark Chao e Allen Deng, se unem para
+                                                resolver assassinatos e conspirações.</p>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><strong>Diretor: </strong> Guo Jingming
+                                                </li>
+                                                <li class="list-inline-item"><strong>Roteiro: </strong> Edward Guo</li>
+                                                <li class="list-inline-item"><strong>Estreia: </strong> 2020</li>
+                                            </ul>
+                                            <p><strong>Elenco:</strong> Deng Lun | Mark Chao | Ziwen Wang | Xu Kaicheng
+                                                | Jessie Li | Sun Chenjun
+                                                | Lu Zhanxiang | Jasper | Qing Wang</p>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><strong>Avaliação: 4.7 </strong></li>
+                                                <li class="list-inline-item" style="color: rgb(182, 38, 38);"><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                                </li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <!--Filme Carousel-->
+                                <div class="row g-0 position-relative justify-content-center">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-md-0 p-md-4">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/r3jPVVvpQOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-4 ps-md-0 box-info">
+                                        <h3 class="mt-0"><strong>Druk - Mais uma Rodada</strong></h5>
+                                            <p><strong>Sinopse: </strong>Para alegrar um amigo em crise, um grupo de
+                                                professores decide testar a ousada teoria de que serão mais felizes e
+                                                bem-sucedidos vivendo com um pouco de álcool no sangue.</p>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><strong>Diretor: </strong> Thomas
+                                                    Vinterberg
+                                                </li>
+                                                <li class="list-inline-item"><strong>Roteiro: </strong> Thomas
+                                                    Vinterberg | Tobias Lindholm</li>
+                                                <li class="list-inline-item"><strong>Estreia: </strong> 2021</li>
+                                            </ul>
+                                            <p><strong>Elenco:</strong> Mads Mikkelsen | Thomas Bo Larsen | Lars Ranthe
+                                                | Magnus Millang | Maria
+                                                Bonnevie | Susse Wold</p>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><strong>Avaliação: 4.6 </strong></li>
+                                                <li class="list-inline-item" style="color: rgb(182, 38, 38);"><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                                </li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <!--Filme Carousel-->
+                                <div class="row g-0 position-relative justify-content-center">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-md-0 p-md-4">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uF8w-6x61fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-4 ps-md-0">
+                                        <h3 class="mt-0"><strong>Raya e o Último Dragão</strong></h5>
+                                            <p><strong>Sinopse: </strong>Há muito tempo, no mundo de fantasia de
+                                                Kumandra, humanos e dragões viviam juntos em harmonia. Mas quando uma
+                                                força maligna ameaçou a terra, os dragões se sacrificaram para salvar a
+                                                humanidade.</p>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><strong>Diretores: </strong> Carlos López
+                                                    Estrada, Don Hall</li>
+                                                <li class="list-inline-item"><strong>Roteiro: </strong> Adele Lim | Qui
+                                                    Nguyen</li>
+                                                <li class="list-inline-item"><strong>Estreia: </strong> 2021</li>
+                                            </ul>
+                                            <p> <strong>Elenco:</strong> Kelly Marie Tran | Awkwafina | Gemma Chan |
+                                                Daniel Dae Kim | Sandra Oh |
+                                                Benedict Wong | Izaac Wang | Thalia Tran | Alan Tudyk</p>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><strong>Avaliação: 4.4 </strong></li>
+                                                <li class="list-inline-item" style="color: rgb(182, 38, 38);"><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="far fa-star"></i></li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!--Filme Carousel-->
+                                <div class="row g-0 position-relative justify-content-center">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-md-0 p-md-4">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KldiQVsfJpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-4 ps-md-0">
+                                        <h3 class="mt-0"><strong>Horizon Line</strong></h5>
+                                            <p><strong>Sinopse: </strong>História de um casal que
+                                                viaja em um pequeno avião para participar de um casamento em uma ilha
+                                                tropical. Quando o piloto sofre um ataque cardíaco durante a viagem,
+                                                eles precisam guiar o avião e lutar pela sobrevivência para chegarem
+                                                sãos e salvos ao destino.</p>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><strong>Diretor: </strong> Mikael Marcimain
+                                                </li>
+                                                <li class="list-inline-item"><strong>Roteiro: </strong> Josh Campbell |
+                                                    Matthew Stuecken</li>
+                                                <li class="list-inline-item"><strong>Estreia: </strong> 2020</li>
+                                            </ul>
+                                            <p><strong>Elenco:</strong> Allison Williams | Alexander Dreymon | Keith
+                                                David | Pearl Mackie |
+                                                Orlaith Doherty | Jumayn Hunter | Lamin Tamba | Marc Redmond | Amanda
+                                                Khan | Francois Groenewald</p>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><strong>Avaliação: 2.3 </strong></li>
+                                                <li class="list-inline-item" style="color: rgb(182, 38, 38);"><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="far fa-star"></i><i
+                                                        class="far fa-star"></i><i class="far fa-star"></i></li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="part2">
+            <!--Em destaque-->
+            <div class="container">
+                <div class="row destaque_row1" style="margin-bottom: 10px;">
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                        <h1><strong>Em Destaque</strong></h1>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-1 btn_categorias d-grid d-sm-block">
+                        <!--Dropdown Button-->
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">Categorias
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                            <li><button class="dropdown-item" type="button">Ação</button></li>
+                            <li><button class="dropdown-item" type="button">Aventura</button></li>
+                            <li><button class="dropdown-item" type="button">Comédia</button></li>
+                            <li><button class="dropdown-item" type="button">Documentário</button></li>
+                            <li><button class="dropdown-item" type="button">Ficção Científica</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row card_area">
+                        <!--Cards dos Filmes-->
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <img src="img/druk-mais-uma-rodada.jpg" class="rounded" style="margin-bottom: 20px;"
+                                alt="...">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <img src="img/convencao-das-bruxas.jpg" class="rounded" style="margin-bottom: 20px;"
+                                alt="...">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <img src="img/legado-explosivo.jpg" class="rounded" style="margin-bottom: 20px;" alt="...">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                            <img src="img/a-viuva-das-sombras.jpg" class="rounded" style="margin-bottom: 20px;"
+                                alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Button-->
+                    <div class="d-grid gap-2 d-sm-flex justify-content-md-end">
+                        <button class="btn btn-danger" type="button">+ Carregar mais Filmes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row Ultimas_row1">
+                    <!--Ultimas Avaliacoes-->
+                    <h1><strong>Últimas Avaliações</strong></h1>
+                </div>
+                <div class="row g-0 avaliadores">
+                    <div class="col-md-4 col-lg-1">
+                        <img src="img/ava1.jpg" class="rounded-circle img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 col-lg-2">
+                        <br>
+                        <h5 class="mt-0"><strong><i class="fas fa-heart"></i>Aliana Severo Paião</strong></h5>
+                        <!--Avaliador(a)-->
+                        <p><strong>Avaliacao:</strong> Achei muito engraçado e divertido Druk, o talendo de Mads
+                            Mikkelsen é de outro mundo e a história é muito boa <br>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <strong> 22/04/2021</strong>
+                        </p>
+
+                    </div>
+                    <div class="col-md-4 col-lg-1">
+                        <img src="img/ava2.jpg" class="rounded-circle img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 col-lg-2">
+                        <br>
+                        <h5 class="mt-0"><strong>Eli Ribeiro Oliveira</strong></h5>
+                        <!--Avaliador(a)-->
+                        <p><strong>Avaliacao:</strong> Roteiro não tem muita imaginação para esse tipo de filme com
+                            desastre, lidando com problemas de relacionamento banais enquanto performaces de meia-boca
+                            nao conseguem vender a urgência do momento. <br>
+                            <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i>
+                            <strong> 12/01/2021</strong>
+                        </p>
+
+                    </div>
+                    <div class="col-md-4 col-lg-1">
+                        <img src="img/ava3.jpg" class="rounded-circle img-fluid" alt="">
+                    </div>
+                    <div class="col-md-7 col-lg-2">
+                        <br>
+                        <h5 class="mt-0"><strong>Zezin Melão</strong></h5>
+                        <!--Avaliador(a)-->
+                        <p><strong>Avaliacao:</strong> Apenas diverte sem muito compromisso com a trama. DEUS EX MACHINA
+                            tá presente o filme todo. <br>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i>
+                            <strong> 19/04/2021</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Button-->
+                    <div class="d-grid gap-2 d-sm-flex justify-content-md-end">
+                        <button class="btn btn-danger" type="button">+ Carregar mais Avaliações</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="part3">
+            <!--Entrevistas e Making of-->
+            <div class="container">
+                <div class="row Entrevistas_row1">
+                    <div class="col-12">
+                        <h1><strong>Entrevistas e Making of</strong></h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <!--Cards-->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4" style="margin-bottom: 20px;">
+                        <div class="card">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4pxov3GFgkg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <h4 class="card-title"><strong>Druk</strong></h5>
+                                    <p class="card-text"><strong>Diretor:</strong> Thomas Vinterberg
+                                        <br><strong>Roteiro:</strong> Thomas Vinterberg | Tobias Lindholm<br>
+                                        <strong>Estreia:</strong> 2021<br>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4" style="margin-bottom: 20px;">
+                        <div class="card">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K2CrBf4RunE"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <h4 class="card-title"><strong>Raya e o Último Dragão</strong></h5>
+                                    <p class="card-text"><strong>Diretor:</strong> Carlos López Estrada | Don Hall
+                                        <br><strong>Roteiro:</strong> Adele Lim | Qui Nguyen<br>
+                                        <strong>Estreia:</strong> 2021 <br>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4" style="margin-bottom: 20px;">
+                        <div class="card">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pCtegaC2SX8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <h4 class="card-title"><strong>Legado Explosivo</strong></h5>
+                                    <p class="card-text"><strong>Diretor:</strong> Mark Williams
+                                        <br><strong>Roteiro:</strong> Mark Williams | Steve Allrich<br>
+                                        <strong>Estreia:</strong> 2021 <br>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Button-->
+                    <div class="d-grid gap-2 d-sm-flex justify-content-md-end">
+                        <button class="btn btn-danger" type="button">+ Carregar mais Conteúdo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="part4">
+            <!--Novidades-->
+            <div class="container">
+                <div class="row" style="margin-bottom: 60px;margin-top: 10px;">
+                    <div class=" col-12 col-sm-12 col-md-12 col-lg-8 campo_novidades">
+                        <h1><strong>Novidades</strong></h1>
+                        <div class="row g-0 position-relative"
+                            style="background-color: lightgray; margin-bottom: 10px;">
+                            <div class="col-md-4 mb-md-0 p-md-4">
+                                <img src="img/OscarAward1.jpg" class="w-100 rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 p-4 ps-md-0">
+                                <!--https://www.adorocinema.com/noticias/filmes/noticia-158498/-->
+                                <h4 class="mt-0"><strong>22/04/2021 - Oscar 2021: 7 artistas negros que fizeram história
+                                        na premiação</h5></strong>
+                                    <p>A Academia, que realiza sua próxima cerimônia neste domingo (25/04), demorou anos
+                                        para indicar e premiar profissionais negros em suas categorias principais.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <h5><span class="badge rounded-pill bg-dark">Oscar 2021</span></h5>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <h5><span class="badge rounded-pill bg-info"
+                                                    style="color: black;">Premiados</span></h5>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <div class="row g-0 bg-light position-relative">
+                            <div class="col-md-4 mb-md-0 p-md-4">
+                                <img src="img/Tony-Stark-Billboard-Final-1.jpg" class="w-100 rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 p-4 ps-md-0">
+                                <!--https://www.adorocinema.com/noticias/filmes/noticia-158520/-->
+                                <h4 class="mt-0"><strong>22/04/2021 - Homem de Ferro vai voltar no MCU? Entenda se e
+                                        como seria
+                                        possível</strong> </h5>
+                                    <p><strong></strong>Será? Fãs alugaram um anúncio em Los Angeles em campanha para
+                                        trazer Robert Downey Jr. de volta ao papel; veja as possibilidades.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <h5><span class="badge rounded-pill bg-warning" style="color: black;">Homem
+                                                    de Ferro</span></h5>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <h5><span class="badge rounded-pill bg-danger"
+                                                    style="color: white;">Marvel</span></h5>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <div class="row g-0 position-relative" style="background-color: lightgray;">
+                            <div class="col-md-4 mb-md-0 p-md-4">
+                                <img src="img/Oscar.jpg" class="w-100 rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8 p-4 ps-md-0">
+                                <!--https://www.adorocinema.com/noticias/filmes/noticia-158525/-->
+                                <h4 class="mt-0"><strong>22-04-2021 - Amazon Brasil: Melhores itens para aproveitar a
+                                        noite do Oscar 2021 com
+                                        muito conforto</strong> </h5>
+                                    <p>Neste domingo, 25 de abril, vamos assistir juntos à maior premiação do cinema.
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <h4><span class="badge rounded-pill bg-success">Amazon</span></h4>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <h4><span class="badge rounded-pill bg-dark">Oscar 2021</span></h4>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <h1><strong>Sobre</strong></h1>
+                        <p>Este Site/Portal foi desenvolvido como trabalho da Disciplina de Desenvolvimento de
+                            Interfaces Web na Puc Minas de Contagem.</p>
+                        <p>Obrigado a todos que contribuiram com ideias de conteúdo.</p>
+                        <strong>
+                            <p>Agradeço a todos que visualizaram essa página. Por favor, contribua com um feedback do
+                                que voçê achou deste Site/Portal.</p>
+                        </strong>
+                        <h1><strong>Editorial</strong></h1>
+                        <i class="fas fa-user-alt" style="font-size: x-large;"></i> <strong>Redação: </strong> Guilherme
+                        Simão<br>
+                        <i class="fas fa-user-alt" style="font-size: x-large;"></i> <strong>Pesquisa: </strong>
+                        Guilherme Simão<br>
+                        <i class="fas fa-user-alt" style="font-size: x-large;"></i> <strong>Programador: </strong>
+                        Guilherme Simão<br><br><br>
+                        <h1><strong>redes sociais:</strong></h1>
+                        <ul class="list-inline" style="font-size: x-large;">
+                            <li class="list-inline-item"><i class="fab fa-twitter"></i> <a href=""
+                                    class="text-decoration-none"
+                                    style="color: rgb(182, 38, 38);"><strong>Twitter</strong></a></li>
+                            <li class="list-inline-item"><i class="fab fa-facebook-square"></i> <a href=""
+                                    class="text-decoration-none"
+                                    style="color: rgb(182, 38, 38);"><strong>Facebook</strong></a></li>
+                            <li class="list-inline-item"><i class="fab fa-instagram"></i> <a href=""
+                                    class="text-decoration-none"
+                                    style="color: rgb(182, 38, 38);"><strong>Instagram</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8 footer_area">
+                    Copyright 2021 - Disciplina de Desenvolimento de Interfaces Web - <strong>ICEI Puc Minas</strong>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="img/Logov3.png" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Bootstrap Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
